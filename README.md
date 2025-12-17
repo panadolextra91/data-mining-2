@@ -274,6 +274,13 @@ From the latest run:
   - pandas
   - matplotlib
   - seaborn
+- **Data**:
+  - Download the SQLite database from Kaggle:  
+    https://www.kaggle.com/datasets/wyattowalsh/basketball  
+    Place the downloaded `nba.sqlite` (or similarly named file) in the project root. If you rename or relocate it, pass the path as the first argument to `NBAPredictor`, e.g.:
+    ```bash
+    mvn clean compile exec:java -Dexec.args="/absolute/path/to/nba.sqlite"
+    ```
 
 ### Installation
 
